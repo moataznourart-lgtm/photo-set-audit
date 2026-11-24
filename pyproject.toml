@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photo-set-audit"
+version = "0.1.0"
+description = "Audit photo folders for display orientation and exact duplicates"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10"]
+
+[project.scripts]
+photo-set-audit = "photo_set_audit:main"
+
+[tool.setuptools]
+py-modules = ["photo_set_audit"]
